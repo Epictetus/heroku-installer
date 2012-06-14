@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Heroku Installer for <%=h @repo_name%></title>
+    <link rel="stylesheet" type="text/css" href="/reset.css" />
+    <link rel="stylesheet" type="text/css" href="/install.css" />
+    <script type="text/javascript" src="/jquery.min.js"></script>
+    <script type="text/javascript" src="/install.js"></script>
+  </head>
+  <body>
+    <form method="POST">
+      <h1>Installing <em><%=h @repo_name%></em> on Heroku</h1>
+
+      <dl>
+        <di>
+          <dt>App Name</dt>
+            <dd><input type="text" name="app_name" /></dd>
+        </di>
+        <di>
+          <dt>API Key</dt>
+            <dd><input type="password" name="api_key" /></dd>
+        </di>
+      </dl>
+
+      <input type="submit" value="Install" />
+
+      <div id="status"></div>
+    </form>
+  </body>
+</html>

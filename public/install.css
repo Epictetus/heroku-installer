@@ -1,0 +1,105 @@
+html {
+  height: 100%;
+  background-color: #191a20;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+form {
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 13px 8px;
+  width: 320px;
+  color: #cff0fe;
+  background-image: url(/background.png);
+  border: 1px solid #2e4e54;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #080808;
+  text-align: center;
+}
+
+form input:disabled {
+  opacity: 0.7;
+}
+
+form h1 {
+  font-size: 18px;
+}
+
+form h1 em {
+  padding: 1px 4px;
+  background-color: #1e2d35;
+  border-radius: 3px;
+  color: #ddd;
+}
+
+form dl {
+  margin: 20px auto;
+  width: 290px;
+}
+
+form dl di {
+  margin: 13px 0;
+  overflow: hidden;
+  display: block;
+}
+
+form dl dt {
+  float: left;
+  font-size: 15px;
+  color: #ddd;
+  height: 15px;
+  line-height: 24px;
+}
+
+form dl dd {
+  float: right;
+}
+
+form dl dd input {
+  padding: 4px;
+  display: block;
+  border: none;
+  border-radius: 3px;
+  font-size: 13px;
+  color: #222;
+  background-color: white;
+  font-family: Consolas, Menlo, monospace;
+  outline: none;
+  width: 200px;
+}
+
+form input[type="submit"] {
+  padding: 4px 28px;
+  margin: 0 auto;
+  color: #14272d;
+  font-size: 13px;
+  font-weight: bold;
+  text-shadow: #bcca84 0px 0px 4px;
+  cursor: pointer;
+  border: none;
+  border-radius: 14px;
+  background-image: url(/install-button.png);
+}
+
+form input[type="submit"]:enabled:hover {
+  background-position: 0 60px;
+}
+
+#status {
+  padding: 0 4px;
+  color: #0f0;
+  background-color: black;
+  border-radius: 3px;
+  font-family: Consolas, Menlo, monospace;
+  font-size: 13px;
+  height: 22px;
+  line-height: 22px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: none;
+}
