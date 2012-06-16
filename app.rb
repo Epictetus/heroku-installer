@@ -1,4 +1,3 @@
-#  -*- coding: utf-8 -*-
 require "sinatra"
 require "json"
 require "cgi"
