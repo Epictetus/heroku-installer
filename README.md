@@ -8,8 +8,9 @@
 
 ## 試してみたい
 
-以下のリンクからは Lokka をインストールできます。
-[http://heroku-installer.gkbr.me/install/git://github.com/hinasssan/lokka-heroku]
+ [Install lokka on Heroku](http://heroku-installer.gkbr.me/install/git://github.com/hinasssan/lokka-heroku)
+ から Lokka をインストールできます。  
+
 
 ## .heroku-installer について
 
