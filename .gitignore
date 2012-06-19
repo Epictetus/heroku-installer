@@ -1,3 +1,4 @@
 vendor
 Gemfile.lock
 server
+log
