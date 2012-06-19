@@ -5,8 +5,7 @@ require "tmpdir"
 require "kramdown"
 require "pty"
 require "shellwords"
-require "heroku-api"
-require "heroku/client/rendezvous"
+require "heroku"
 
 HEROKU_ACCOUNT = "hinasssan@gmail.com"
 
