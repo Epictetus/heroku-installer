@@ -28,24 +28,17 @@ $(function () {
         var data = this.responseText;
         
         for ( ; read < data.length; read++ ) {
-          switch (data[read]) {
-            case "\033":
-              read += 2;
-              break;
-            case "\r":
-              returned = true
-              break;
-            case "\n":
-              break;
-            default:
-              if (returned) {
-                status.text(data[read]);
-                returned = false;
-              } else {
-                status[0].textContent += data[read];
-              }
+          var c = data[read];
 
-              break;
+          if ( c == "\033" ) {
+            read += 2;
+          } else if ( c == "\r" || c == "\n" ) {
+            returned = true;
+          } else if (returned) {
+            status.text(c);
+            returned = false;
+          } else {
+            status[0].textContent += c;
           }
         }
       } else if ( this.readyState == 4 ) {

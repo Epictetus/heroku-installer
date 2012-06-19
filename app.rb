@@ -61,6 +61,9 @@ end
       rescue Heroku::API::Errors::Unauthorized
         puts "API key may be invalid."
         next
+      rescue
+        puts "Heroku is dead."
+        next
       end
 
       begin
