@@ -50,25 +50,29 @@ form dl dt {
   float: left;
   font-size: 15px;
   color: #ddd;
-  height: 15px;
-  line-height: 24px;
 }
 
 form dl dd {
   float: right;
+  text-align: left;
 }
 
 form dl dd input {
   padding: 4px;
-  display: block;
   border: none;
   border-radius: 3px;
   font-size: 13px;
+  line-height: 100%;
   color: #222;
   background-color: white;
   font-family: Consolas, Menlo, monospace;
   outline: none;
   width: 200px;
+}
+
+form dl dd a {
+  font-size: 11px;
+  color: white;
 }
 
 form input[type="submit"] {
